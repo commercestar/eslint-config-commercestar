@@ -9,6 +9,7 @@
   },
   "files": [
     "index.js",
+    "react.js",
     "prettier.config.js"
   ],
   "repository": {
