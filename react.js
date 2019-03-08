@@ -5,14 +5,17 @@ module.exports = {
     mocha: true,
   },
   rules: {
-    'react/display-name': 0,
-    'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
-    'react/no-did-update-set-state': 0,
     'jsx-a11y/href-no-hash': 0,
     'jsx-a11y/label-has-for': 0,
+    'react/display-name': 0,
     'react/jsx-handler-names': 0,
-    'import/prefer-default-export': 0,
-    'no-return-assign': 0,
-    'flowtype/no-types-missing-file-annotation': 0,
-  }
+    'react/no-did-update-set-state': 0,
+    'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
+  },
+  plugins: ['json', 'prettier', 'flowtype', 'react'],
+  settings: {
+    react: {
+      version: '16.6.0',
+    },
+  },
 };
