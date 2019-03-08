@@ -3,7 +3,7 @@
   "author": "Commerce Star Ltd.",
   "license": "UNLICENSED",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "scripts": {
     "test": "ENV=test jest --no-cache"
   },
@@ -14,12 +14,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org:commercestar/eslint-config-commercestar.git"
+    "url": "git+https://github.com/commercestar/eslint-config-commercestar.git#master"
   },
   "peerDependencies": {
     "eslint": "^5.13.0",
     "prettier": "^1.16.4"
   },
+
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.13.0",
