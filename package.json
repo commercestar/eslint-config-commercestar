@@ -3,7 +3,7 @@
   "author": "Commerce Star Ltd.",
   "license": "UNLICENSED",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "test": "ENV=test jest --no-cache"
   },

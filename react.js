@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers */
 module.exports = {
-  extends: ['./index.js', '../../etc/eslint/rules/plugins/react.js'],
+  extends: ['./index.js', './etc/eslint/rules/plugins/react.js'],
   env: {
     mocha: true,
   },
