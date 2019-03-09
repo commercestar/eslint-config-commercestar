@@ -3,7 +3,7 @@
   "author": "Commerce Star Ltd.",
   "license": "UNLICENSED",
   "private": true,
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "test": "ENV=test jest --no-cache"
   },
@@ -26,7 +26,7 @@
     "@typescript-eslint/eslint-plugin-tslint": "^1.3.0",
     "@typescript-eslint/parser": "^1.4.2",
     "babel-eslint": "^10.0.1",
-    "babel-plugin-root-import": "^5.1.0",
+    "babel-plugin-root-import": "^6.1.0",
     "eslint": "^5.15.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",

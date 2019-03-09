@@ -254,10 +254,10 @@ babel-eslint@^10.0.1:
     eslint-scope "3.7.1"
     eslint-visitor-keys "^1.0.0"
 
-babel-plugin-root-import@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-root-import/-/babel-plugin-root-import-5.1.0.tgz#80ea1cd5945b463a5e3f7e204a69478c573e328c"
-  integrity sha1-gOoc1ZRbRjpeP34gSmlHjFc+Mow=
+babel-plugin-root-import@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-root-import/-/babel-plugin-root-import-6.1.0.tgz#ea27407df1e920750fc247b2702e322a19f8a14f"
+  integrity sha512-7pFBKr83H7S4mjLICsHENXm8oZ//sTdrjlxP20y7wWAmDl8N1IRtUVAGJDCTk3E9E3LOyRdiPb9znoweDVCrFg==
   dependencies:
     slash "^1.0.0"
 
