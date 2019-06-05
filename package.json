@@ -3,7 +3,7 @@
   "author": "Commerce Star Ltd.",
   "license": "UNLICENSED",
   "private": true,
-  "version": "0.0.12",
+  "version": "0.0.14",
   "scripts": {
     "test": "ENV=test jest --no-cache",
     "precommit": "npx eslint -c index.js ./etc/eslint"
@@ -20,11 +20,9 @@
   "peerDependencies": {
     "eslint": "^5.15.0",
     "prettier": "^1.16.4",
-    "tslint": "^5.13.0",
     "typescript": "^3.3.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin-tslint": "^1.9.0",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
     "babel-eslint": "^10.0.1",
@@ -49,7 +47,6 @@
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-standard": "^4.0.0",
     "prettier": "^1.16.4",
-    "tslint": "^5.13.0",
     "typescript": "^3.3.0"
   }
 }
