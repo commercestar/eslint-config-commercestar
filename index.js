@@ -1,23 +1,6 @@
 /* eslint-disable no-magic-numbers */
 const path = require('path');
 
-let defaultExtends = [
-  'airbnb/base',
-  'eslint:recommended',
-  'plugin:flowtype/recommended',
-  'prettier',
-  'prettier/standard',
-  path.resolve(__dirname, './etc/eslint/rules/plugins/filenames.js'),
-  path.resolve(__dirname, './etc/eslint/rules/plugins/import.js'),
-  path.resolve(__dirname, './etc/eslint/rules/eslint/best-practices/on.js'),
-  path.resolve(__dirname, './etc/eslint/rules/eslint/errors/on.js'),
-  path.resolve(__dirname, './etc/eslint/rules/eslint/es6/on.js'),
-  path.resolve(__dirname, './etc/eslint/rules/eslint/strict/on.js'),
-  path.resolve(__dirname, './etc/eslint/rules/eslint/style/on.js'),
-  path.resolve(__dirname, './etc/eslint/rules/eslint/variables/on.js'),
-  path.resolve(__dirname, './etc/eslint/rules/eslint/node/on.js'),
-];
-
 let defaultRules = {
   'no-console': [
     'error',
@@ -58,14 +41,30 @@ module.exports = {
       experimentalObjectRestSpread: true,
     },
   },
-  extends: defaultExtends,
+  extends: [
+    'airbnb/base',
+    'eslint:recommended',
+    'plugin:flowtype/recommended',
+    'prettier',
+    'prettier/standard',
+    path.resolve(__dirname, './etc/eslint/rules/plugins/filenames.js'),
+    path.resolve(__dirname, './etc/eslint/rules/plugins/import.js'),
+    path.resolve(__dirname, './etc/eslint/rules/eslint/best-practices/on.js'),
+    path.resolve(__dirname, './etc/eslint/rules/eslint/errors/on.js'),
+    path.resolve(__dirname, './etc/eslint/rules/eslint/es6/on.js'),
+    path.resolve(__dirname, './etc/eslint/rules/eslint/strict/on.js'),
+    path.resolve(__dirname, './etc/eslint/rules/eslint/style/on.js'),
+    path.resolve(__dirname, './etc/eslint/rules/eslint/variables/on.js'),
+    path.resolve(__dirname, './etc/eslint/rules/eslint/node/on.js'),
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+  ],
   rules: defaultRules,
   plugins: ['json', 'prettier', 'flowtype'],
   overrides: {
     files: ['**/*.ts', '**/*.tsx'],
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint'],
-    extends: defaultExtends.concat('plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint'),
     rules: {
       ...defaultRules,
       'no-undef': 'off',
