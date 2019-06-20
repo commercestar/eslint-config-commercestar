@@ -12,7 +12,6 @@ let defaultRules = {
   'brace-style': 0,
   camelcase: 0,
   'dot-notation': 0,
-  'flowtype/no-types-missing-file-annotation': 0,
   'global-require': 0,
   'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   'import/prefer-default-export': 0,
@@ -21,7 +20,7 @@ let defaultRules = {
   'no-labels': 2,
   'no-loop-func': 0,
   'no-return-assign': 0,
-  'no-unused-vars': 2,
+  'no-unused-vars': [2, { argsIgnorePattern: '^_' }],
   'no-use-before-define': 0,
   quotes: [2, 'single'],
   semi: [2, 'always'],
@@ -44,7 +43,6 @@ module.exports = {
   extends: [
     'airbnb/base',
     'eslint:recommended',
-    'plugin:flowtype/recommended',
     'prettier',
     'prettier/standard',
     path.resolve(__dirname, './etc/eslint/rules/plugins/filenames.js'),
@@ -60,15 +58,14 @@ module.exports = {
     'prettier/@typescript-eslint',
   ],
   rules: defaultRules,
-  plugins: ['json', 'prettier', 'flowtype'],
+  plugins: ['json', 'prettier'],
   overrides: {
     files: ['**/*.ts', '**/*.tsx'],
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint'],
     rules: {
       ...defaultRules,
-      'no-undef': 'off',
-      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     },
   },
 };

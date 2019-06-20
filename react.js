@@ -12,7 +12,7 @@ module.exports = {
     'react/no-did-update-set-state': 0,
     'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
   },
-  plugins: ['json', 'prettier', 'flowtype', 'react'],
+  plugins: ['json', 'prettier', 'react'],
   settings: {
     react: {
       version: '16.6.0',
