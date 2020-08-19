@@ -3,7 +3,7 @@
   "author": "Commerce Star Ltd.",
   "license": "UNLICENSED",
   "private": true,
-  "version": "0.0.15",
+  "version": "0.0.16",
   "scripts": {
     "test": "ENV=test jest --no-cache",
     "precommit": "npx eslint -c index.js ./etc/eslint"
